@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      background: #fff;
+      padding: 20px;
+    }
+
+    header img, .banner img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0 15px;
+      font-size: 28px;
+    }
+
+    .products, .discount-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .product {
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .product-name {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: red;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <img src="https://i.imgur.com/0S9pMfh.jpg" alt="Banner Da Vũ">
+  </header>
+
+  <h2>NEW ARRIVAL</h2>
+  <section class="products">
+    <div class="product">
+      <img src="https://i.imgur.com/BhztEsx.jpg" alt="">
+      <div class="product-name">Moonlit Lace - Áo sơ mi ren hoa</div>
+      <div class="price">1.200.000₫</div>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/lukUpGn.jpg" alt="">
+      <div class="product-name">Classic Dress - Dịu dàng tinh tế</div>
+      <div class="price">980.000₫</div>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/YMfLZyE.jpg" alt="">
+      <div class="product-name">Off-shoulder Dress - Nữ tính</div>
+      <div class="price">1.500.000₫</div>
+    </div>
+  </section>
+
+  <h2>GIẢM 50% CÁC SẢN PHẨM</h2>
+  <section class="discount-products">
+    <div class="product">
+      <img src="https://i.imgur.com/lukUpGn.jpg" alt="">
+      <div class="product-name">Mùa Hè Thanh Lịch</div>
+      <div class="price">790.000₫</div>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/gYj3UOE.jpg" alt="">
+      <div class="product-name">Vest Công Sở</div>
+      <div class="price">1.000.000₫</div>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/s0Y3USf.jpg" alt="">
+      <div class="product-name">Áo đầm thêu cổ V</div>
+      <div class="price">1.050.000₫</div>
+    </div>
+  </section>
+</body>
+</html>
