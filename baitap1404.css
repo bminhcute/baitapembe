@@ -1,0 +1,103 @@
+z-index: 100;
+                font-size: 16px;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background-color:#FFFFFF;
+
+            }
+            .menu a{
+                margin-left: 80px;
+                margin-bottom: 10px;
+                margin-top: 18px;
+                font-size: 10px;
+            }
+            .timkiem{
+                display: none;
+            }
+            .nav{
+                display: grid;
+                grid-template-areas: "hamburget logo";
+                grid-template-columns:  1fr 1fr;
+                grid-template-rows: auto;
+                text-align: center;
+            }
+            .menu {display: none;}
+            #check:checked ~ .menu {
+                display: flex;
+            }
+            .hamburget{
+                display: grid;
+                grid-area:hamburget;
+                display: block;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                padding-top: 60px;
+                padding-top: 20px; /* Giảm padding để hamburger không bị vướng */
+                 z-index: 101; 
+                 margin-top: 20px;
+            }
+            .logo{
+                display: grid;
+                grid-area:logo;
+                z-index: 10002;
+            }
+            .catelog{
+            display: none;
+
+             }
+        .tk{
+            display: none;
+        }
+        .khungsp{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow-y: scroll;
+        }
+        .gt{
+            font-size: 16px;
+        }
+        p{font-size: 14px;}
+        }
+        @media(max-width:600px){
+        .menu{
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                align-items:flex-start  ;
+                z-index: 100;
+                font-size: 14px;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background-color:#FFFFFF;
+
+            }
+            .menu a{
+                margin-left: 80px;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                font-size: 10px;
+            }
+            .timkiem{
+                display: none;
+            }
+            .nav{
+                display: grid;
+                grid-template-areas: "hamburget logo";
+                grid-template-columns:  1fr 1fr;
+                grid-template-rows: auto;
+                text-align: center;
+            }
+            .menu {display: none;}
+            #check:checked ~ .menu {
+                display: flex;
+            }
+            .hamburget{
+                display: grid;
+                grid-area:hamburget;
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+                padding-top: 60px;
